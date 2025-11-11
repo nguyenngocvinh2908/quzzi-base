@@ -1,0 +1,89 @@
+.form {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &__heading {
+        font-size: 1.6rem;
+        color: #0078ff;
+        margin-bottom: 30px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    
+
+    &__group {
+        margin-bottom: 20px;
+
+        .form__input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d0d7e2;
+            border-radius: 8px;
+            outline: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #fdfdfd;
+
+            &::placeholder {
+                color: #aaa;
+            }
+
+            &:focus {
+                border-color: #0078ff;
+                box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.15);
+            }
+        }
+
+        &--text-align {
+            text-align: start;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        border-radius: 8px;
+        background-color: #0078ff;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background-color: #005ecc;
+        }
+    }
+
+    // Hiệu ứng khi hover form (rất nhẹ, tạo cảm giác nổi)
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    &__checkbox {
+        margin-right: 8px;
+        accent-color: #0078ff; // Màu checkbox hiện đại
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    &__label {
+        font-size: 0.95rem;
+        color: #555;
+        cursor: pointer;
+        user-select: none;
+
+        &::before {
+          content: "I agree to the terms and conditions";
+        }
+    }
+}

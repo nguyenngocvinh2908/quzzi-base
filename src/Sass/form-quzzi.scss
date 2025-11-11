@@ -1,0 +1,92 @@
+.form-quzzi {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__item {
+        background: #f9fbff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        border: 1px solid #d8e2f0;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: #eef5ff;
+        }
+    }
+
+    &__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #2a3b64;
+        margin-bottom: 12px;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+        gap: 10px;
+
+        .form-quzzi__radio {
+            width: 18px;
+            height: 18px;
+            accent-color: #4f46e5; // màu tím xanh hiện đại
+            cursor: pointer;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+
+        .form-quzzi__text {
+            font-size: 1rem;
+            color: #444b6e;
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #4f46e5;
+            }
+
+            &.result__item--correct {
+                color: #16a34a; /* xanh đúng */
+                font-weight: 600;
+            }
+
+            &.result__item--wrong {
+                color: #dc2626; /* đỏ sai */
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__btn {
+        align-self: center;
+        margin-top: 10px;
+        background: linear-gradient(135deg, #4f46e5, #6a5af9);
+        color: white;
+        border: none;
+        padding: 14px 40px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: linear-gradient(135deg, #4338ca, #5b4df2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

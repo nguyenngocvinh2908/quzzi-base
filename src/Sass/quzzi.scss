@@ -1,0 +1,33 @@
+.quzzi {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef3ff 100%);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #2b3674;
+        margin-bottom: 30px;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    &__form {
+        background-color: #ffffff;
+        width: 85%;
+        max-width: 900px;
+        padding: 40px 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+    }
+}
