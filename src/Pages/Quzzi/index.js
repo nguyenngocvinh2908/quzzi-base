@@ -65,7 +65,6 @@ function Quzzi() {
         };
 
         const response = await postAnswerByUser(dataAnswers);
-        console.log(response);
         if (response) {
             setTimeout(() => {
                 setConfirmLoading(false);

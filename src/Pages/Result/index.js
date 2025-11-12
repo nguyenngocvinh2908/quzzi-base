@@ -13,9 +13,6 @@ function Result() {
             const dataQuestions = await getQuestionsIdTopic(
                 dataAnswers[0].topicId
             );
-
-            console.log(dataAnswers);
-
             const dataAnswersMap = dataAnswers[0].answers.reduce(
                 (acc, item) => {
                     acc[item.questionId] = item;
@@ -37,8 +34,6 @@ function Result() {
         if(item.answer === item.correctAnswer) return quantity+= 1
         else return quantity
     }, 0)
-    console.log(quantitySentenceCorrect);
-    console.log(dataResult);
     return (
         <>
             <section className="result">

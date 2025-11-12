@@ -28,8 +28,6 @@ function Answers() {
         fetchData();
     }, []);
 
-    console.log(mergedAnswerTopic)
-
     return (
         <>
             <section className="answers">
