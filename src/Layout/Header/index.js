@@ -39,9 +39,8 @@ function Header () {
                         {isAuthenticated() ? (
                             <>
                                 <div className="header__signout">
-                                    <NavLink className="header__link" onClick={handleClickSignOut} to="signin">Sign Out</NavLink>
+                                    <NavLink className="header__link" onClick={handleClickSignOut} to="/signin">Sign Out</NavLink>
                                 </div>
-
                             </>
                         ) : (
                             <>
