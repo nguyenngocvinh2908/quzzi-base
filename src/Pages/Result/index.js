@@ -7,7 +7,6 @@ import "../../Sass/result.scss";
 function Result() {
     const param = useParams();
     const [dataResult, setDataResult] = useState([]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         const fetData = async () => {
             const dataAnswers = await getAnswers(param.id);
@@ -29,7 +28,7 @@ function Result() {
             setDataResult(mergedAnswerForQuestions);
         };
         fetData();
-    }, []);
+    }, [param.id]);
 
     const quantitySentenceCorrect = dataResult.reduce((quantity, item) => {
         if(item.answer === item.correctAnswer) return quantity+= 1
