@@ -26,7 +26,7 @@ function Answers() {
             setMergedAnswerTopic(mergedAnswerTopic.reverse());            
         }
         fetchData();
-    }, []);
+    }, [userId.id]);
 
     return (
         <>

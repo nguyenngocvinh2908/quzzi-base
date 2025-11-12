@@ -20,7 +20,7 @@ function Quzzi() {
             setDataTopicId(response);
         };
         fetchData();
-    }, []);
+    }, [param.id]);
 
     const [questionsIdTopic, setQuestionsIdTopic] = useState([]);
     useEffect(() => {
@@ -29,7 +29,7 @@ function Quzzi() {
             setQuestionsIdTopic(response);
         };
         fetchData();
-    }, []);
+    }, [param.id]);
 
     const handleCancel = () => {
         setOpenModal(false);
