@@ -13,6 +13,7 @@ function Quzzi() {
     const [dataTopicId, setDataTopicId] = useState([]);
     const [openModal, setOpenModal] = useState(false);
     const [confirmLoading, setConfirmLoading] = useState(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         const fetchData = async () => {
             const response = await getTopicId(param.id);

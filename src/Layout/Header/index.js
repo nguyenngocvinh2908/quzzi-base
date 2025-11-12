@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "./header.scss";
-import { delUser, getUser, isAuthenticated } from "../../Utils/Cookie";
+import { delUser, isAuthenticated } from "../../Utils/Cookie";
 function Header () {
     const handleClickSignOut = () => {
         delUser();

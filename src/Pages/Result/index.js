@@ -7,6 +7,7 @@ import "../../Sass/result.scss";
 function Result() {
     const param = useParams();
     const [dataResult, setDataResult] = useState([]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         const fetData = async () => {
             const dataAnswers = await getAnswers(param.id);
