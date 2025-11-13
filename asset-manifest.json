@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/quzzi-base/static/css/main.1a159ee2.css",
-    "main.js": "/quzzi-base/static/js/main.66f9121b.js",
+    "main.js": "/quzzi-base/static/js/main.2040f4ff.js",
     "static/js/453.e27ea10c.chunk.js": "/quzzi-base/static/js/453.e27ea10c.chunk.js",
     "index.html": "/quzzi-base/index.html",
     "main.1a159ee2.css.map": "/quzzi-base/static/css/main.1a159ee2.css.map",
-    "main.66f9121b.js.map": "/quzzi-base/static/js/main.66f9121b.js.map",
+    "main.2040f4ff.js.map": "/quzzi-base/static/js/main.2040f4ff.js.map",
     "453.e27ea10c.chunk.js.map": "/quzzi-base/static/js/453.e27ea10c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a159ee2.css",
-    "static/js/main.66f9121b.js"
+    "static/js/main.2040f4ff.js"
   ]
 }
